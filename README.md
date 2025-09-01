@@ -4,6 +4,8 @@
 
 [rip2](https://github.com/MilesCranmer/rip2) plugin for the [asdf version manager](https://asdf-vm.com).
 
+rip2 is a fast and safe alternative to `rm` that moves files to trash instead of permanently deleting them.
+
 </div>
 
 # Contents
@@ -15,10 +17,15 @@
 
 # Dependencies
 
-**TODO: adapt this section**
-
 - `bash`, `curl`, `tar`, and [POSIX utilities](https://pubs.opengroup.org/onlinepubs/9699919799/idx/utilities.html).
-- `SOME_ENV_VAR`: set this environment variable in your shell config to load the correct version of tool x.
+- `unzip` - required for Windows binary extraction (if on Windows/WSL).
+
+## Supported Platforms
+
+- **macOS**: Intel (x86_64) and Apple Silicon (ARM64)
+- **Linux**: x86_64, ARM64, ARMv7, i686, PowerPC64, PowerPC64LE, s390x
+- **FreeBSD**: x86_64
+- **Windows**: x86_64, i686 (requires `unzip`)
 
 # Install
 
